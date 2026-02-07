@@ -12,8 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: 'read'
-      id-token: 'write'
-      pages: 'write'
 
     steps:
       - name: Checkout
@@ -22,30 +20,20 @@ jobs:
       - name: Create Google Calendar credentials file
         run: echo '${{ secrets.GOOGLE_CALENDAR_CREDENTIALS }}' > cal-creds.json
 
-      - name: Authenticate to Google Cloud
-        uses: google-github-actions/auth@v2
-        with:
-          credentials_json: '${{ secrets.GOOGLE_CALENDAR_CREDENTIALS }}'
-
-      - name: Set up Cloud SDK
-        uses: google-github-actions/setup-gcloud@v2
-        with:
-          version: '>= 363.0.0'
-
-      - name: Download database from GCS
-        run: |
-          mkdir -p data
-          gsutil cp gs://bikegroups-org/calendar_sync_db/calendar_sync.db ./data/calendar_sync.db || echo "No existing database, starting fresh"
-
       - name: Install uv
         uses: astral-sh/setup-uv@v4
         with:
           python-version: "3.13"
-        env:
-          UV_NO_DEV: "true"
 
       - name: Install dependencies
-        run: uv sync
+        run: uv sync --all-groups
+
+      - name: Download database from S3
+        env:
+          ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
+          SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
+          API_URL: https://storage.googleapis.com
+        run: uv run scripts/pull_db.py
 
       - name: Run calendar sync
         env:
@@ -72,14 +60,13 @@ jobs:
           mkdir -p _site
           uv run calendar-sync report -o _site/index.html
 
-      - name: Upload database to GCS
+      - name: Upload database to S3
         if: always()
-        run: |
-          if [ -f "./data/calendar_sync.db" ]; then
-            gsutil cp ./data/calendar_sync.db gs://bikegroups-org/calendar_sync_db/calendar_sync.db
-          else
-            echo "No database file to upload"
-          fi
+        env:
+          ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
+          SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
+          API_URL: https://storage.googleapis.com
+        run: uv run scripts/push_db.py
 
       - name: Upload Pages artifact
         if: always()

@@ -11,14 +11,15 @@ dependencies = [
     "typer>=0.9",
     "pydantic>=2.0",
     "httpx>=0.25",
+    "python-dotenv>=1.0",
 ]
 
 [project.scripts]
-calendar-sync = "calendar_sync.cli:app"
+calsync = "calendar_sync.cli:app"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [dependency-groups]
-dev = []
+dev = ["boto3>=1.35"]

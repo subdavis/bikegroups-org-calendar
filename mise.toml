@@ -3,3 +3,15 @@ python = "3.13"
 
 [env]
 _.python.venv = ".venv"
+
+[tasks.pull]
+run = "uv run scripts/pull_db.py"
+
+[tasks.push]
+run = "uv run scripts/push_db.py"
+
+[tasks.sync]
+run = "uv run calendar-sync process"
+
+[tasks.cmd]
+run = "uv run calendar-sync"

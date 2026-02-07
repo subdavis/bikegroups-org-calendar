@@ -6,9 +6,14 @@ from typing import Optional
 import typer
 from rich.console import Console
 from rich.table import Table
+from dotenv import load_dotenv
 
 from . import calendar, claude, db, report, rss
 from .models import Action
+
+
+# Load environment variables from .env file
+load_dotenv()
 
 app = typer.Typer(help="Sync RSS feed events to Google Calendar using Claude")
 console = Console()
