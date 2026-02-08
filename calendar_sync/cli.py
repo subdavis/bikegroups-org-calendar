@@ -12,6 +12,11 @@ from . import calendar, claude, db, report, rss
 from .models import Action
 
 
+def format_local_time(iso_str: str | None) -> str:
+    """Parse ISO format datetime string and convert to local time."""
+    return claude.local_time_str(iso_str)
+
+
 # Load environment variables from .env file
 load_dotenv()
 
@@ -130,7 +135,7 @@ def history(
     for entry in entries:
         style = decision_styles.get(entry["decision"], "")
         table.add_row(
-            entry["processed_at"][:19],
+            format_local_time(entry["processed_at"]),
             entry["post_guid"],
             entry.get("post_title") or "-",
             entry.get("post_author") or "-",
@@ -158,8 +163,8 @@ def details(
     console.print(f"[bold]GUID:[/bold]       {record['post_guid']}")
     console.print(f"[bold]Title:[/bold]      {record.get('post_title') or '-'}")
     console.print(f"[bold]Author:[/bold]     {record.get('post_author') or '-'}")
-    console.print(f"[bold]Post Time:[/bold]  {record.get('post_time') or '-'}")
-    console.print(f"[bold]Processed:[/bold]  {record['processed_at']}")
+    console.print(f"[bold]Post Time:[/bold]  {format_local_time(record.get('post_time'))}")
+    console.print(f"[bold]Processed:[/bold]  {format_local_time(record['processed_at'])}")
     console.print(f"[bold]Decision:[/bold]   {record['decision']}")
     console.print(f"[bold]Event ID:[/bold]   {record['calendar_event_id'] or '-'}")
     console.print(f"[bold]Tokens:[/bold]     {record.get('input_tokens', 0) or 0:,} in / {record.get('output_tokens', 0) or 0:,} out")

@@ -2,7 +2,9 @@
 
 import html as html_lib
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timezone
+
+from . import claude
 
 
 DECISION_COLORS = {
@@ -15,12 +17,15 @@ DECISION_COLORS = {
 
 
 def _day_label(post_time: str | None) -> str:
-    """Return a day header like 'Tuesday Feb 4' from an ISO timestamp."""
+    """Return a day header like 'Tuesday Feb 4' from an ISO timestamp in local time."""
     if not post_time or post_time == "-":
         return "Unknown Date"
     try:
+        # Parse and convert to local time
         dt = datetime.fromisoformat(post_time)
-        return dt.strftime("%A %b ") + str(dt.day)
+        from zoneinfo import ZoneInfo
+        local_dt = dt.astimezone(ZoneInfo(claude.TIME_ZONE))
+        return local_dt.strftime("%A %b ") + str(local_dt.day)
     except (ValueError, TypeError):
         return "Unknown Date"
 
@@ -47,10 +52,8 @@ def generate_report(entries: list[dict], total_cost: float) -> str:
             cost = f"${e['cost_usd']:.4f}" if e.get("cost_usd") else "-"
             tokens_in = f"{e.get('input_tokens') or 0:,}"
             tokens_out = f"{e.get('output_tokens') or 0:,}"
-            processed = e["processed_at"][:19]
-            post_time = e.get("post_time") or "-"
-            if post_time != "-":
-                post_time = post_time[:19]
+            processed = claude.local_time_str(e["processed_at"])
+            post_time = claude.local_time_str(e.get("post_time"))
 
             title_html = f'<a href="{html_lib.escape(link, quote=True)}">{title}</a>' if link else title
 
@@ -104,6 +107,6 @@ def generate_report(entries: list[dict], total_cost: float) -> str:
   <h1>Calendar Sync Report</h1>
   <p class="subtitle">Last {len(entries)} processed posts &middot; Total cost: ${total_cost:.4f}</p>
   {cards}
-  <p class="summary">Generated {datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")}</p>
+  <p class="summary">Generated {claude.local_time_str(datetime.now(timezone.utc))}</p>
 </body>
 </html>"""

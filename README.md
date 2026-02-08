@@ -21,4 +21,6 @@ mise run push
 
 ```bash
 mise run trigger
+gh run list
+gh run watch
 ```

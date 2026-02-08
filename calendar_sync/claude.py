@@ -5,6 +5,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 
 import httpx
 from anthropic import Anthropic
@@ -16,7 +17,32 @@ from .models import Action, ClaudeDecision, EventDetails, RssPost
 # Pricing per million tokens (Claude 3.5 Sonnet)
 INPUT_COST_PER_M = 3.00
 OUTPUT_COST_PER_M = 15.00
+TIME_ZONE = "America/Chicago"
 
+def local_time_str(dt: datetime | str | None) -> str:
+    """Convert UTC datetime or ISO string to local timezone string for logging.
+
+    Args:
+        dt: A datetime object, ISO format string, or None
+
+    Returns:
+        Formatted local time string, or "-" if dt is None
+    """
+    if dt is None:
+        return "-"
+
+    # Parse string to datetime if needed
+    if isinstance(dt, str):
+        try:
+            dt_parsed: datetime = datetime.fromisoformat(dt)
+        except (ValueError, TypeError):
+            return str(dt)  # Return original string if parsing fails
+        dt = dt_parsed
+
+    # Convert to local timezone
+    tz = ZoneInfo(TIME_ZONE)
+    local_dt = dt.astimezone(tz)
+    return local_dt.strftime('%Y-%m-%d %H:%M:%S %Z')
 
 def get_logs_dir() -> Path:
     """Get the logs directory path."""
@@ -214,7 +240,7 @@ If you can find these details in the post, they're always worth including.
     </Sample description 2>
 </End Sample descriptions>
 
-For the sake of reasoning about relative dates (i.e. this saturday), the current date and time is {datetime.now(timezone.utc).isoformat()}. The timezone is {timezone.utc.tzname}. 
+For the sake of reasoning about relative dates (i.e. "this saturday"), the current date and time is {local_time_str(datetime.now(timezone.utc))}. The timezone is {TIME_ZONE}. 
 It is OK to create events for dates in the past if the post was published in the past (the post speaks of the event in present or future tense).
 
 You MUST call submit_decision before exiting."""
@@ -388,7 +414,7 @@ def build_message_content(post: RssPost) -> list[dict]:
 Title: {post.title}
 Author: {post.author or 'Unknown'}
 Link: {post.link}
-Published: {post.published.isoformat() if post.published else 'Unknown'}
+Published: {local_time_str(post.published) if post.published else 'Unknown'}
 
 Content:
 {post.content}{image_note}
