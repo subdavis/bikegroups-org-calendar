@@ -4,10 +4,10 @@ from anthropic import Anthropic
 
 from .models import RssPost
 
-# Haiku pricing per million tokens
-HAIKU_INPUT_COST_PER_M = 0.80
-HAIKU_OUTPUT_COST_PER_M = 4.00
-HAIKU_MODEL = "claude-3-5-haiku-latest"
+# Haiku 4.5 pricing per million tokens
+HAIKU_INPUT_COST_PER_M = 1.00
+HAIKU_OUTPUT_COST_PER_M = 5.00
+HAIKU_MODEL = "claude-haiku-4-5-20251001"
 
 PREFILTER_PROMPT = """You are a binary classifier. Given an RSS post from a cycling community Instagram account, determine if the post could plausibly be announcing an event (a ride, meetup, race, social gathering, etc. with a date/time).
 
