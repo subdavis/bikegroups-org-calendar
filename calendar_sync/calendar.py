@@ -92,10 +92,13 @@ def search_events_by_keyword(
     time_min = now.isoformat()
     time_max = (now + timedelta(days=days_ahead)).isoformat()
 
+    # Normalize keywords: strip whitespace, drop empties, deduplicate
+    normalized = list(dict.fromkeys(k.strip() for k in keywords if k.strip()))
+
     seen_ids: set[str] = set()
     all_events: list[CalendarEvent] = []
 
-    for keyword in keywords:
+    for keyword in normalized:
         events_result = (
             service.events()
             .list(
@@ -111,12 +114,19 @@ def search_events_by_keyword(
 
         for e in events_result.get("items", []):
             event_id = e.get("id")
+            if not event_id:
+                continue
             if event_id not in seen_ids:
                 seen_ids.add(event_id)
                 all_events.append(_parse_event(e))
 
-    # Sort by start time and return top 5
-    all_events.sort(key=lambda e: e.start)
+    # Sort by start time; normalize naive datetimes (all-day events) to UTC
+    def _sort_key(e: CalendarEvent) -> datetime:
+        if e.start.tzinfo is None:
+            return e.start.replace(tzinfo=ZoneInfo("UTC"))
+        return e.start
+
+    all_events.sort(key=_sort_key)
     return all_events[:5]
 
 

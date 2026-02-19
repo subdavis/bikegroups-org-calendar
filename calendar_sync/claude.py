@@ -281,6 +281,7 @@ TOOLS = [
                 "keywords": {
                     "type": "array",
                     "items": {"type": "string"},
+                    "minItems": 1,
                     "description": "List of search terms to match against (e.g., [\"Unity Ride\", \"Unity\", \"Sunday ride\"]). An event matching ANY keyword will be returned.",
                 },
             },
