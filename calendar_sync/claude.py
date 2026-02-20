@@ -155,7 +155,7 @@ IMPORTANT: Event information may be embedded in images (event posters/flyers). Y
 You have access to these tools:
 1. get_images - Fetch the post's images (call this if the post could plausibly be an event)
 2. search_events_by_date - Check if events exist on specific dates
-3. search_events_by_keyword - Search for events by name/keyword
+3. search_events_by_keyword - Search for events by name/keyword. Provide an array of keywords; events matching ANY keyword are returned (top 5 by upcoming date)
 4. submit_decision - Submit your final decision (REQUIRED)
 
 Workflow:
@@ -281,16 +281,18 @@ TOOLS = [
     },
     {
         "name": "search_events_by_keyword",
-        "description": "Search the calendar for events matching a keyword.",
+        "description": "Search the calendar for events matching any of the given keywords. Returns the 5 nearest upcoming events that match at least one keyword.",
         "input_schema": {
             "type": "object",
             "properties": {
-                "query": {
-                    "type": "string",
-                    "description": "Search term (e.g., event name, organization name)",
+                "keywords": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "minItems": 1,
+                    "description": "List of search terms to match against (e.g., [\"Unity Ride\", \"Unity\", \"Sunday ride\"]). An event matching ANY keyword will be returned.",
                 },
             },
-            "required": ["query"],
+            "required": ["keywords"],
         },
     },
     {
@@ -529,7 +531,7 @@ def execute_tool(name: str, input_data: dict, ctx: AnalysisContext) -> Any:
         ]
 
     elif name == "search_events_by_keyword":
-        events = calendar.search_events_by_keyword(query=input_data["query"])
+        events = calendar.search_events_by_keyword(keywords=input_data["keywords"])
         return [
             {"id": e.id, "title": e.title, "start": e.start.isoformat(), "location": e.location, "description": e.description}
             for e in events
