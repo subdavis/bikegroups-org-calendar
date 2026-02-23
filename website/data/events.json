@@ -323,6 +323,63 @@
   },
   {
     "kind": "calendar#event",
+    "etag": "\"3543625306195422\"",
+    "id": "jnodf5oakvc2j35hp30mfovki4",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=am5vZGY1b2FrdmMyajM1aHAzMG1mb3ZraTQgNmEyNTZlMjVlMzE2Y2M2Nzc3MWI5OWJkNDk5ZGZhNTdkMjc4MGQ1MWY2ZWI1ZjlkZjFhOWQ4NDI5OWExYjNjMkBn",
+    "created": "2026-02-23T02:10:53.000Z",
+    "updated": "2026-02-23T02:10:53.097Z",
+    "summary": "Seed Swap Garden Ride",
+    "description": "Group ride (no-drop) - Seed Swap Garden Ride. Share gardening stories, swap seeds, and ride bikes around town.\n\n<b>When</b>: Saturday March 8, 2026 at noon.\n\n<b>Start and Finish</b>: Behind Bars Bicycle Shop\n\n<b>Distance</b>: 15 miles. <b>Pace</b>: Party pace (10-15 mph).\n\nBring your seed collection, helmet, lock, and respectful attitude. Come share garden plans, swap seeds, and ride bikes!\n\n<b>Link</b>: <a href=\"https://www.instagram.com/p/DVFJBq3jKJ9/\">https://www.instagram.com/p/DVFJBq3jKJ9/</a>",
+    "location": "Behind Bars Bicycle Shop",
+    "creator": {
+      "email": "bicyclegroupsorg@bicyclegroupsorg.iam.gserviceaccount.com"
+    },
+    "organizer": {
+      "email": "6a256e25e316cc67771b99bd499dfa57d2780d51f6eb5f9df1a9d84299a1b3c2@group.calendar.google.com",
+      "displayName": "Minneapolis Cycling Events",
+      "self": true
+    },
+    "start": {
+      "dateTime": "2026-03-08T12:00:00-05:00",
+      "timeZone": "America/Chicago"
+    },
+    "end": {
+      "dateTime": "2026-03-08T14:00:00-05:00",
+      "timeZone": "America/Chicago"
+    },
+    "iCalUID": "jnodf5oakvc2j35hp30mfovki4@google.com",
+    "sequence": 0,
+    "reminders": {
+      "useDefault": true
+    },
+    "eventType": "default",
+    "extra_metadata": {
+      "id": 36,
+      "post_guid": "3a6508eee95d39c2",
+      "processed_at": "2026-02-23T02:10:53.456435+00:00",
+      "decision": "create",
+      "calendar_event_id": "jnodf5oakvc2j35hp30mfovki4",
+      "post_content": "<p>It\u2019s about that time to get the garden started!\n\nWe will share gardening stories, swap seeds amongst each other and go rides bikes around town.\n\nNoon\nMarch 8th, 2026\nMeet up @behindbarsbicycleshop\n\n15 mile route\nParty pace(10-15mph)\n\nBring your seed collection, helmet, lock, and respectful attitude.</p>\n\n\n\n\n<p><img src=\"https://rssglue.subdavis.com/media/fa/fa6709937d6eb669fc55ac192a6b4340c3bb45f4a730a1cec9550dca73b9ba0e.jpg\" /></p>\n\n\n<p><small>\u2764\ufe0f 18 likes | \ud83d\udcac 0 comments</small></p>\n\n<p><small>\ud83c\udfb5 Old Vibes - DROPLIKEAI</small></p>",
+      "reasoning": "This is a clear event announcement for a \"Seed Swap Garden Ride\" on March 8th, 2026 at noon. All key details are provided in both the post text and the event poster image: date (March 8, 2026), time (noon), location (Behind Bars Bicycle Shop), distance (15 miles), and pace (party pace, 10-15mph). The event combines gardening/seed swapping with a group bike ride. No similar events exist on this date or in the calendar.",
+      "input_tokens": 20440,
+      "output_tokens": 931,
+      "cost_usd": 0.075285,
+      "post_title": "It\u2019s about that time to get the garden started!",
+      "post_author": "@sirbikesalot365",
+      "post_time": "2026-02-23T00:37:28+00:00",
+      "post_link": "https://www.instagram.com/p/DVFJBq3jKJ9/",
+      "event_title": "Seed Swap Garden Ride",
+      "event_date": "2026-03-08",
+      "event_time": "12:00",
+      "event_location": "Behind Bars Bicycle Shop"
+    },
+    "image_urls": [
+      "https://rssglue.subdavis.com/media/fa/fa6709937d6eb669fc55ac192a6b4340c3bb45f4a730a1cec9550dca73b9ba0e.jpg"
+    ]
+  },
+  {
+    "kind": "calendar#event",
     "etag": "\"3543415522740798\"",
     "id": "uosqnndmal3i1sf6ckkiv7heig",
     "status": "confirmed",
