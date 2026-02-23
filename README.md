@@ -37,3 +37,11 @@ gh run watch
 ```bash
 mise run validate
 ```
+
+## Adding images to the website
+
+Strip ICC color profiles from images before committing. Embedded color profiles (e.g. sRGB) cause the image background to appear as a different shade of white from the page background on iOS/iPadOS Safari with wide-gamut (P3) displays.
+
+```bash
+magick input.jpg -strip output.jpg
+```

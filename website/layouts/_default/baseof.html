@@ -13,7 +13,7 @@
   <header role="banner" class="bg-white text-black text-center p-4">
     {{ $image := resources.Get "/images/mpls.bike.jpg" }}
     <a href="/" class="text-inherit no-underline">
-      <img src="{{ $image.Permalink }}" alt="Minneapolis Cycling Events" width="400px" class="mx-auto h-auto contrast-150">
+      <img src="{{ $image.Permalink }}" alt="Minneapolis Cycling Events" width="400px" class="mx-auto h-auto contrast-150 mix-blend-multiply">
     </a>
   </header>
   <main id="main-content" role="main" class="max-w-[620px] mx-auto px-4">
@@ -21,7 +21,7 @@
   </main>
   <footer role="contentinfo" class="text-center p-4 text-sm">
     {{ $imageFooter := resources.Get "/images/bike.jpg" }}
-    <img src="{{ $imageFooter.Permalink }}" alt="Footer of a bicycle" width="200px" class="mx-auto h-auto contrast-150">
+    <img src="{{ $imageFooter.Permalink }}" alt="Footer of a bicycle" width="200px" class="mx-auto h-auto contrast-150 mix-blend-multiply">
   </footer>
 </body>
 </html>
