@@ -5,6 +5,8 @@ groups:
     image: 'acf.webp'
   - name: "Behind Bars Bicycle Shop"
     image: 'behindbars.webp'
+  - name: "Bike MN"
+    image: 'bikemn.webp'
   - name: "Biking With Baddies"
     image: 'bikingwithbaddies.webp'
   - name: "Bone Saw Cycling Collective"
