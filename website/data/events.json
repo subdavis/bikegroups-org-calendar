@@ -1,99 +1,6 @@
 [
   {
     "kind": "calendar#event",
-    "etag": "\"3543460413787294\"",
-    "id": "3ab6r91clmmsjd45jmgpnq4isk",
-    "status": "confirmed",
-    "htmlLink": "https://www.google.com/calendar/event?eid=M2FiNnI5MWNsbW1zamQ0NWptZ3BucTRpc2sgNmEyNTZlMjVlMzE2Y2M2Nzc3MWI5OWJkNDk5ZGZhNTdkMjc4MGQ1MWY2ZWI1ZjlkZjFhOWQ4NDI5OWExYjNjMkBn",
-    "created": "2026-02-22T03:16:46.000Z",
-    "updated": "2026-02-22T03:16:46.893Z",
-    "summary": "Free Yoga at Recovery Bike Shop (Sunday)",
-    "description": "Free community yoga session at Recovery Bike Shop.<br><br>Time: Sundays at 9am (before Coffee Outside at 10am)<br><br>Instructor: @Rachel.Cro<br><br>Bring your own mat.<br><br>\"Self care is activism. As a community, as a country, as a species, we still have a long way to go. And wherever we go, we'll get there together.\"<br><br>Link: <a href=\"https://www.instagram.com/p/DU5vzxzDu9n/\">https://www.instagram.com/p/DU5vzxzDu9n/</a>",
-    "location": "Recovery Bike Shop, 2504 Central Ave NE, Minneapolis, MN 55418",
-    "creator": {
-      "email": "bicyclegroupsorg@bicyclegroupsorg.iam.gserviceaccount.com"
-    },
-    "organizer": {
-      "email": "6a256e25e316cc67771b99bd499dfa57d2780d51f6eb5f9df1a9d84299a1b3c2@group.calendar.google.com",
-      "displayName": "Minneapolis Cycling Events",
-      "self": true
-    },
-    "start": {
-      "dateTime": "2026-02-22T09:00:00-06:00",
-      "timeZone": "America/Chicago"
-    },
-    "end": {
-      "dateTime": "2026-02-22T11:00:00-06:00",
-      "timeZone": "America/Chicago"
-    },
-    "iCalUID": "3ab6r91clmmsjd45jmgpnq4isk@google.com",
-    "sequence": 0,
-    "reminders": {
-      "useDefault": true
-    },
-    "eventType": "default",
-    "extra_metadata": {
-      "id": 19,
-      "post_guid": "a5463c5928c8957c",
-      "processed_at": "2026-02-22T03:16:47.249478+00:00",
-      "decision": "create",
-      "calendar_event_id": "3ab6r91clmmsjd45jmgpnq4isk",
-      "post_content": "<p>Self care is activism. As a community, as a country, as a species, we still have a long way to go. And wherever we go, we\u2019ll get there together.\n\nJoin your neighbors for free yoga twice a week. Sundays at 9am before Coffee (Outside) and now Thursday evenings at 7:15pm. (Thank you @Rachel.Cro)\n\nBring your own mat.\n\n#YogaCommunity\n\n#WhatCanIdo\n#NortheastMinneapolis\n#MeetMinneapolis\n#Activism</p>\n\n\n\n\n<p><img src=\"https://rssglue.subdavis.com/media/a0/a03e5a5fd702aa98cc3e354d323b03e7cadf86f52da75e6e097cb811ccadf08a.jpg\" /></p>\n\n\n<p><small>\u2764\ufe0f 50 likes | \ud83d\udcac 0 comments</small></p>\n\n<p><small>\ud83c\udfb5 Better Off Lonely - GEEZ</small></p>",
-      "reasoning": "This post announces recurring free yoga sessions at Recovery Bike Shop. Creating event for Sunday yoga at 9am on Feb 22, 2026. The post indicates this happens before Coffee (Outside) which starts at 10am. The instructor is Rachel.Cro. This is the first of two events being created from this post.",
-      "input_tokens": 33130,
-      "output_tokens": 1324,
-      "cost_usd": 0.11925000000000001,
-      "post_title": "Self care is activism. As a community, as a country, as a species, we still have a long way to go. A",
-      "post_author": "@recoverybikeshop",
-      "post_time": "2026-02-18T14:22:09+00:00",
-      "post_link": "https://www.instagram.com/p/DU5vzxzDu9n/",
-      "event_title": "Free Yoga at Recovery Bike Shop (Sunday)",
-      "event_date": "2026-02-22",
-      "event_time": "09:00",
-      "event_location": "Recovery Bike Shop, 2504 Central Ave NE, Minneapolis, MN 55418"
-    },
-    "image_urls": [
-      "https://rssglue.subdavis.com/media/a0/a03e5a5fd702aa98cc3e354d323b03e7cadf86f52da75e6e097cb811ccadf08a.jpg"
-    ]
-  },
-  {
-    "kind": "calendar#event",
-    "etag": "\"3543543883843934\"",
-    "id": "4cdls965hlvs2gtf3sutfs47p5",
-    "status": "confirmed",
-    "htmlLink": "https://www.google.com/calendar/event?eid=NGNkbHM5NjVobHZzMmd0ZjNzdXRmczQ3cDUgNmEyNTZlMjVlMzE2Y2M2Nzc3MWI5OWJkNDk5ZGZhNTdkMjc4MGQ1MWY2ZWI1ZjlkZjFhOWQ4NDI5OWExYjNjMkBn",
-    "created": "2026-02-09T21:34:50.000Z",
-    "updated": "2026-02-22T14:52:21.921Z",
-    "summary": "FTWNB cyclist meet-up",
-    "description": "<p><span>Gathering</span><span> and </span><span>Group ride (no-drop)</span> <span><b>FTWNB cyclist meet-up. </b></span><a href=\"https://www.instagram.com/p/DUPftNHDDFQv7sgwOUFKVvrWl8xsslBGNIKKOw0/\" target=\"_blank\"><span><u>Instagram</u></span></a><span>.</span></p><p><span><b>When: </b></span><span>Sunday </span><span>Feb 22, 2026 10:00\u202fAM</span><span>.</span></p><p><span><b>Where: </b></span><a href=\"https://www.google.com/maps/place/FRGMNT+Coffee+-+St.+Anthony+Main/data=!4m2!3m1!19sChIJwRP8Hjwts1IRkSYR_DdNdUc\" target=\"_blank\"><span><u>FRGMNT Coffee - St. Anthony Main</u></span></a></p><p><span><b>Who\u2019s this for</b></span><span>: FTW (anyone but cis-men). See this resource from Grease Rag </span><a href=\"https://greaserag.org/safer-spaces/wtf-is-ftw/\" target=\"_blank\"><span><u>defining FTW.</u></span></a></p><p><span>Are you NOT a cis-man? Do you ride bikes? Any bike? Show up and meet others who also ride bikes!!!</span></p><p><span>I am looking to create a regularly meeting group to ride bikes in DIFFERENT ways &lt;3 I love exploring dirt as much as I love rush hour pavement. And im tired of doing it alone. maybe you want other endurance riders to train with, maybe you are tired of mountain biking alone, maybe you are new to the city. Maybe you need to vent about being a gender minority in cycling!</span></p><p><span>You DONT need to ride your bike to this. Weather is barrier, just say hi! Will there be a ride? Yes! Do I know where? Not yet!</span></p><p><span>TIP your barista.</span></p><p><span>NO TRANSPHOBIA, NO RACISM, NO TRUMPISM, NO ASSHOLE BEHAVIOUR TOLERATED. Also an anti-ICE space.</span></p>",
-    "location": "FRGMNT Coffee - St. Anthony Main, 43 SE Main St, Minneapolis, MN 55414, USA",
-    "creator": {
-      "email": "jmbangsund@gmail.com"
-    },
-    "organizer": {
-      "email": "6a256e25e316cc67771b99bd499dfa57d2780d51f6eb5f9df1a9d84299a1b3c2@group.calendar.google.com",
-      "displayName": "Minneapolis Cycling Events",
-      "self": true
-    },
-    "start": {
-      "dateTime": "2026-02-22T10:00:00-06:00",
-      "timeZone": "America/Chicago"
-    },
-    "end": {
-      "dateTime": "2026-02-22T12:00:00-06:00",
-      "timeZone": "America/Chicago"
-    },
-    "iCalUID": "4cdls965hlvs2gtf3sutfs47p5@google.com",
-    "sequence": 0,
-    "reminders": {
-      "useDefault": true
-    },
-    "eventType": "default",
-    "extra_metadata": null,
-    "image_urls": []
-  },
-  {
-    "kind": "calendar#event",
     "etag": "\"3543469315936446\"",
     "id": "0fb5pkf4h21kjt2e6b3n0hukt1",
     "status": "confirmed",
@@ -323,14 +230,14 @@
   },
   {
     "kind": "calendar#event",
-    "etag": "\"3543625306195422\"",
+    "etag": "\"3543625694665086\"",
     "id": "jnodf5oakvc2j35hp30mfovki4",
     "status": "confirmed",
     "htmlLink": "https://www.google.com/calendar/event?eid=am5vZGY1b2FrdmMyajM1aHAzMG1mb3ZraTQgNmEyNTZlMjVlMzE2Y2M2Nzc3MWI5OWJkNDk5ZGZhNTdkMjc4MGQ1MWY2ZWI1ZjlkZjFhOWQ4NDI5OWExYjNjMkBn",
     "created": "2026-02-23T02:10:53.000Z",
-    "updated": "2026-02-23T02:10:53.097Z",
+    "updated": "2026-02-23T02:14:07.332Z",
     "summary": "Seed Swap Garden Ride",
-    "description": "Group ride (no-drop) - Seed Swap Garden Ride. Share gardening stories, swap seeds, and ride bikes around town.\n\n<b>When</b>: Saturday March 8, 2026 at noon.\n\n<b>Start and Finish</b>: Behind Bars Bicycle Shop\n\n<b>Distance</b>: 15 miles. <b>Pace</b>: Party pace (10-15 mph).\n\nBring your seed collection, helmet, lock, and respectful attitude. Come share garden plans, swap seeds, and ride bikes!\n\n<b>Link</b>: <a href=\"https://www.instagram.com/p/DVFJBq3jKJ9/\">https://www.instagram.com/p/DVFJBq3jKJ9/</a>",
+    "description": "Group ride (no-drop) - Seed Swap Garden Ride. Share gardening stories, swap seeds, and ride bikes around town.<br><br><b>When</b>: Saturday March 8, 2026 at noon.<br><br><b>Start and Finish</b>: Behind Bars Bicycle Shop<br><br><b>Distance</b>: 15 miles. <b>Pace</b>: Party pace (10-15 mph).<br>\u00a0<br>Bring your seed collection, helmet, lock, and respectful attitude. Come share garden plans, swap seeds, and ride bikes!<br><br><b>Link</b>: <a href=\"https://www.instagram.com/p/DVFJBq3jKJ9/\" target=\"_blank\">https://www.instagram.com/p/DVFJBq3jKJ9/</a>",
     "location": "Behind Bars Bicycle Shop",
     "creator": {
       "email": "bicyclegroupsorg@bicyclegroupsorg.iam.gserviceaccount.com"
@@ -496,73 +403,6 @@
   },
   {
     "kind": "calendar#event",
-    "etag": "\"3543460951533502\"",
-    "id": "1ujqs0p31sc4dh90ocd9k5g2it_20260222T160000Z",
-    "status": "confirmed",
-    "htmlLink": "https://www.google.com/calendar/event?eid=MXVqcXMwcDMxc2M0ZGg5MG9jZDlrNWcyaXRfMjAyNjAyMjJUMTYwMDAwWiA2YTI1NmUyNWUzMTZjYzY3NzcxYjk5YmQ0OTlkZmE1N2QyNzgwZDUxZjZlYjVmOWRmMWE5ZDg0Mjk5YTFiM2MyQGc",
-    "created": "2025-04-10T20:39:24.000Z",
-    "updated": "2026-02-22T03:21:15.766Z",
-    "summary": "Coffee (Outside) by Recovery Bike Shop",
-    "description": "Coffee (Outside) by Recovery Bike Shop. This week at Qahwah House!<br><br>When: Sunday at 10am<br><br>Location: Qahwah House (19th & Central across from the police station)<br><br>This is a bike-themed meetup. Not a ride. It's just coffee and hanging out. Bundle up - it's going to be a little colder this weekend, but feel free to spend time INSIDE Qahwah as well.<br><br>Qahwah House has been a hub of activity on Central Ave, hosting meetups, training sessions, decompressions and more. This is what community looks like!<br><br>Link: <a href=\"https://www.instagram.com/p/DVBh7SRjunf/\">https://www.instagram.com/p/DVBh7SRjunf/</a>",
-    "location": "Qahwah House Coffee - Minneapolis, 1851 Central Ave NE, Minneapolis, MN 55418, USA",
-    "creator": {
-      "email": "jmbangsund@gmail.com"
-    },
-    "organizer": {
-      "email": "6a256e25e316cc67771b99bd499dfa57d2780d51f6eb5f9df1a9d84299a1b3c2@group.calendar.google.com",
-      "displayName": "Minneapolis Cycling Events",
-      "self": true
-    },
-    "start": {
-      "dateTime": "2026-02-22T10:00:00-06:00",
-      "timeZone": "America/Chicago"
-    },
-    "end": {
-      "dateTime": "2026-02-22T12:00:00-06:00",
-      "timeZone": "America/Chicago"
-    },
-    "recurringEventId": "1ujqs0p31sc4dh90ocd9k5g2it",
-    "originalStartTime": {
-      "dateTime": "2026-02-22T10:00:00-06:00",
-      "timeZone": "America/Chicago"
-    },
-    "iCalUID": "1ujqs0p31sc4dh90ocd9k5g2it@google.com",
-    "sequence": 0,
-    "reminders": {
-      "useDefault": true
-    },
-    "eventType": "default",
-    "recurrence_future_count": 18,
-    "recurrence_label": "And 17 more",
-    "extra_metadata": {
-      "id": 33,
-      "post_guid": "0a0a3baa86e24f81",
-      "processed_at": "2026-02-22T03:19:02.890645+00:00",
-      "decision": "update",
-      "calendar_event_id": "1ujqs0p31sc4dh90ocd9k5g2it_20260222T160000Z",
-      "post_content": "<p>Qahwah House has been another hub of activity on Central Ave over the past ten weeks or so, hosting meetups, training sessions, decompressions and more.\n\nThis is what community looks like!\n\nWe want them to know we\u2019re glad they\u2019re here. We want you to know that Qahwah is a great third space. Worth your time.\n\nCoffee (Outside) 10am Sunday at Qahwah House (19th &amp; Central across from the police station).\n\nIt\u2019s gonna be a little colder this weekend, so bundle up and feel free to spend some time INSIDE Qahwah on Sunday. Looking forward to seeing you!\n\nAs always, free yoga at Recovery Bike Shop at 9am with @HalenAnne\n\nAnd if you\u2019re near Bryn Mawr TODAY between 1:00 &amp; 3:00, join Reco and the Bryn Mawr Active Transportation Committee to Rewrite Your Commute! Bridge closures, highway construction, and other infrastructure changes are coming. Find out how adapt (and maintain your sanity). Winter riding tips, conversations with MNDoT, practice loading your bike on a bus, and more. Bryn Mawr Presbyterian Church (420 Cedar Lake Rd S, Minneapolis).\n\n#NortheastMinneapolis\n\n#MeetMinneapolis\n#MinnesotaOutdoors\n#Minnesnowta\n#WinterBiking</p>\n\n\n<p><img src=\"https://rssglue.subdavis.com/media/d0/d01231dcd54f493df6b68d7c55996f20ad1ba47daf206de57841fead2cc56578.jpg\" /></p>\n\n<p><img src=\"https://rssglue.subdavis.com/media/71/712cf03e5fe0623c0c148d5908b9bea5daa071dc4742f71b61d7c72e7683bd60.jpg\" /></p>\n\n<p><img src=\"https://rssglue.subdavis.com/media/e3/e31ae8ebefe0bba5d0cece5dbac1aee28c97197d64115ac616cd1143c727b10f.jpg\" /></p>\n\n<p><img src=\"https://rssglue.subdavis.com/media/4d/4d317f0655d48f729fe6fcb1bcaac765e0f090451ff3676a1748bc3fb02670ad.jpg\" /></p>\n\n\n\n\n<p><small>\u2764\ufe0f 85 likes | \ud83d\udcac 0 comments</small></p>\n\n<p><small>\ud83c\udfb5 Go Squad (feat. Mike Block) - Birib\u00e1 Union</small></p>",
-      "reasoning": "The post reveals the location for the weekly Coffee (Outside) event on Sunday Feb 22 at 10am. The existing event on the calendar doesn't have a specific location, and this post provides it: Qahwah House (19th & Central across from the police station). This is the weekly location announcement that the existing event description mentions.",
-      "input_tokens": 41444,
-      "output_tokens": 1695,
-      "cost_usd": 0.149757,
-      "post_title": "Qahwah House has been another hub of activity on Central Ave over the past ten weeks or so, hosting",
-      "post_author": "@recoverybikeshop",
-      "post_time": "2026-02-21T14:49:40+00:00",
-      "post_link": "https://www.instagram.com/p/DVBh7SRjunf/",
-      "event_title": "Coffee (Outside) by Recovery Bike Shop",
-      "event_date": "2026-02-22",
-      "event_time": "10:00",
-      "event_location": "Qahwah House, 19th & Central Ave NE (across from police station), Minneapolis"
-    },
-    "image_urls": [
-      "https://rssglue.subdavis.com/media/d0/d01231dcd54f493df6b68d7c55996f20ad1ba47daf206de57841fead2cc56578.jpg",
-      "https://rssglue.subdavis.com/media/71/712cf03e5fe0623c0c148d5908b9bea5daa071dc4742f71b61d7c72e7683bd60.jpg",
-      "https://rssglue.subdavis.com/media/e3/e31ae8ebefe0bba5d0cece5dbac1aee28c97197d64115ac616cd1143c727b10f.jpg",
-      "https://rssglue.subdavis.com/media/4d/4d317f0655d48f729fe6fcb1bcaac765e0f090451ff3676a1748bc3fb02670ad.jpg"
-    ]
-  },
-  {
-    "kind": "calendar#event",
     "etag": "\"3538919685799166\"",
     "id": "4mdg5e479o3h22tpm8kk04cdi1_20260225T004500Z",
     "status": "confirmed",
@@ -644,6 +484,48 @@
     "eventType": "default",
     "recurrence_future_count": 18,
     "recurrence_label": "And 17 more",
+    "extra_metadata": null,
+    "image_urls": []
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3543460685105886\"",
+    "id": "1ujqs0p31sc4dh90ocd9k5g2it_20260301T160000Z",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MXVqcXMwcDMxc2M0ZGg5MG9jZDlrNWcyaXRfMjAyNjAzMDFUMTYwMDAwWiA2YTI1NmUyNWUzMTZjYzY3NzcxYjk5YmQ0OTlkZmE1N2QyNzgwZDUxZjZlYjVmOWRmMWE5ZDg0Mjk5YTFiM2MyQGc",
+    "created": "2025-04-10T20:39:24.000Z",
+    "updated": "2026-02-22T03:19:02.552Z",
+    "summary": "Coffee (Outside) by Recovery Bike Shop",
+    "description": "<p dir=\"ltr\"><span>Coffee (Outside) by Recovery Bike Shop. </span><a href=\"http://recovery.bike/events\"><span><u>Website</u></span></a><span>. </span><a href=\"https://www.instagram.com/recoverybikeshop/\"><span><u>Instagram</u></span></a><span>.</span></p><p dir=\"ltr\"><span>Every Sunday at 10am.</span></p><p dir=\"ltr\"><span>Start: Check @RecoveryBikeShop on Instagram for NE location reveal the day before</span></p><p dir=\"ltr\"><span>This is a bike-themed meetup every Sunday at 10am. Not a ride. It\u2019s just coffee and hanging out. New location in NE Mpls every week. We bring treats. BYO coffee.</span></p>",
+    "creator": {
+      "email": "jmbangsund@gmail.com"
+    },
+    "organizer": {
+      "email": "6a256e25e316cc67771b99bd499dfa57d2780d51f6eb5f9df1a9d84299a1b3c2@group.calendar.google.com",
+      "displayName": "Minneapolis Cycling Events",
+      "self": true
+    },
+    "start": {
+      "dateTime": "2026-03-01T10:00:00-06:00",
+      "timeZone": "America/Chicago"
+    },
+    "end": {
+      "dateTime": "2026-03-01T11:00:00-06:00",
+      "timeZone": "America/Chicago"
+    },
+    "recurringEventId": "1ujqs0p31sc4dh90ocd9k5g2it",
+    "originalStartTime": {
+      "dateTime": "2026-03-01T10:00:00-06:00",
+      "timeZone": "America/Chicago"
+    },
+    "iCalUID": "1ujqs0p31sc4dh90ocd9k5g2it@google.com",
+    "sequence": 0,
+    "reminders": {
+      "useDefault": true
+    },
+    "eventType": "default",
+    "recurrence_future_count": 17,
+    "recurrence_label": "And 16 more",
     "extra_metadata": null,
     "image_urls": []
   },

@@ -2,17 +2,17 @@
 <section aria-label="Quick links">
   <p></p>
   <nav>
-    <ul class="list-none p-0">
+    <ul class="list-none">
       {{ range .Site.Data.links.links }}
-      <li class="mb-4">
-        <a href="{{ .url }}" class="flex items-center p-0 bg-white border-2 border-stone-300 rounded-full no-underlin transition-colors hover:bg-stone-100">
+      <li class="mb-4 ">
+        <a href="{{ .url }}" class="flex items-center p-0 bg-white border border-stone-300 rounded-lg transition-colors">
           {{ if .image }}
-            <div class="bg-stone-700 p-3 rounded-full">
+            <div class="bg-stone-800 p-3 rounded-md rounded-r-none">
               {{ $image := resources.Get .image }}
-              <img src="{{ $image.RelPermalink }}" alt="" class="h-10 w-10 invert object-contain rounded-md">
+              <img src="{{ $image.RelPermalink }}" alt="" class="h-10 w-10 invert object-contain rounded-md contrast-300">
             </div>
           {{ end }}
-          <div class="flex-1 text-center mr-10 text-lg font-bold text-stone-700">
+          <div class="flex-1 text-center mr-10 text-lg font-bold text-stone-800">
             {{ .name }}
             {{ if strings.HasPrefix .url "http" }}
               <span class="sr-only">(opens in new tab)</span>
@@ -23,5 +23,18 @@
       {{ end }}
     </ul>
   </nav>
+</section>
+
+<section aria-label="Local Clubs and Teams" class="py-8">
+  <h2 class="text-lg text-stone-600 font-semibold text-stone-800">Local happenings by these good folks</h2>
+  <p class="block text-sm">(and many others)</p>
+  <div class="grid grid-cols-5 sm:grid-cols-7 gap-2 mt-6">
+    {{ range .Site.Data.clubs.groups }}
+      {{ $image := resources.Get (printf "club-images/%s" .image) }}
+      <div class="flex flex-col items-center text-center">
+        <img src="{{ $image.RelPermalink }}" alt="{{ .name }}" class="w-full aspect-square object-cover rounded-md grayscale-80 hover:grayscale-0">
+      </div>
+    {{ end }}
+  </div>
 </section>
 {{ end }}

@@ -1,0 +1,55 @@
+groups:
+  - name: "All Bodies On Bikes"
+    image: 'abob.webp'
+  - name: "ACF"
+    image: 'acf.webp'
+  - name: "Behind Bars Bicycle Shop"
+    image: 'behindbars.webp'
+  - name: "Biking With Baddies"
+    image: 'bikingwithbaddies.webp'
+  - name: "Bone Saw Cycling Collective"
+    image: 'bonesaw.webp'
+  - name: "Bryn Mawr Active Transit"
+    image: 'brynmawractivertransit.webp'
+  - name: "Corpse Whale"
+    image: 'corpsewhale.webp'
+  - name: "El Zapatero Bike Club"
+    image: 'ez.webp'
+  - name: "Fast Casual"
+    image: 'fastcasual.webp'
+  - name: "Freewheel Bike"
+    image: 'freewheel.webp'
+  - name: "Geno's"
+    image: 'geno.webp'
+  - name: "Grease Rag"
+    image: 'greaserag.webp'
+  - name: "Handup Racing"
+    image: 'handup.webp'
+  - name: "Joyful"
+    image: 'joyful.webp'
+  - name: "Major Taylor"
+    image: 'majortaylor.webp'
+  - name: "Midtown"
+    image: 'midtown.webp'
+  - name: "Midwest Dirt Legion"
+    image: 'mwdl.webp'
+  - name: "Perennial Cycle"
+    image: 'perennial.webp'
+  - name: "Piecycle"
+    image: 'piecycle.webp'
+  - name: "Recovery Bike Shop"
+    image: 'recovery.webp'
+  - name: "Slow Roll"
+    image: 'slowroll.webp'
+  - name: "Sociable Cider Werks"
+    image: 'sociable.webp'
+  - name: "Stoke"
+    image: 'stoke.webp'
+  - name: "Team Recess"
+    image: 'teamrecess.webp'
+  - name: "URG"
+    image: 'urg.webp'
+  - name: "Utepils Cycling"
+    image: 'utepils.webp'
+  - name: "Versus Race Team"
+    image: 'versus.webp'

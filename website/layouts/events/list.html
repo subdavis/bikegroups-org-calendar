@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{/* ===== SCHEDULE VIEW ===== */}}
-<section id="schedule-view" aria-label="Upcoming cycling events">
+<section id="schedule-view" aria-label="Upcoming cycling events" class="-mt-2">
   {{ $prevDate := "" }}
   {{ range sort site.Data.events "start.dateTime" "asc" }}
     {{ $startRaw := or .start.dateTime .start.date }}
@@ -10,29 +10,29 @@
     {{/* Date header for new date groups */}}
     {{ if ne $curDate $prevDate }}
       <h3 class="flex items-center pt-3 pb-2" role="heading" aria-level="3">
-        <span class="text-sm font-extrabold text-stone-600 tracking-wide">{{ time.AsTime $startRaw | time.Format "Monday, Jan 2" }}</span>
+        <span class="text-sm font-extrabold text-stone-700 tracking-wide">{{ time.AsTime $startRaw | time.Format "Monday, Jan 2" }}</span>
       </h3>
     {{ end }}
     {{ $prevDate = $curDate }}
 
     {{/* Schedule event row */}}
     <a href="#event-{{ .id }}" class="flex items-stretch gap-3 no-underline text-inherit py-1 visited:text-inherit" data-event-id="{{ .id }}" aria-label="{{ .summary }}">
-      <div class="w-15 min-w-15 text-xs font-mono text-stone-600 pt-2 text-right shrink-0">
+      <div class="w-15 min-w-15 text-xs font-mono text-stone-700 pt-2 text-right shrink-0">
         {{ if .start.dateTime }}
           {{ time.AsTime .start.dateTime | time.Format "3:04 PM" }}
         {{ else }}
           All day
         {{ end }}
       </div>
-      <div class="flex flex-1 min-w-0 rounded-lg overflow-hidden border border-gray-300">
+      <div class="flex flex-1 min-w-0 rounded-lg overflow-hidden border border-gray-300 bg-white">
         <div class="w-1.5 min-w-1.5 bg-stone-600"></div>
         <div class="flex flex-col gap-0.5 py-1 px-3 min-w-0">
           <span class="font-semibold text-[0.95rem] whitespace-nowrap overflow-hidden text-ellipsis">{{ .summary }}</span>
           {{ with .location }}
-            <span class="text-xs text-gray-500 whitespace-nowrap overflow-hidden text-ellipsis">{{ . }}</span>
+            <span class="text-xs text-stone-600 whitespace-nowrap overflow-hidden text-ellipsis">{{ . }}</span>
           {{ end }}
           {{ with .recurrence_label }}
-            <span class="text-xs text-gray-500 font-semibold">{{ . }}</span>
+            <span class="text-xs text-stone-600 font-semibold">{{ . }}</span>
           {{ end }}
         </div>
       </div>
@@ -49,10 +49,10 @@
 
   {{/* Dark gray hero card */}}
   <div class="bg-[#3c4043] text-white p-4 rounded-t-lg">
-    <h2 class="m-0 font-['Arial_Black',sans-serif] text-xl leading-tight">{{ .summary }}</h2>
+    <h2 class="m-0 font-bold text-2xl leading-tight">{{ .summary }}</h2>
   </div>
 
-  <div class="border border-gray-300 border-t-0 rounded-b-lg py-4 px-5 flex flex-col gap-3 mb-6">
+  <div class="border bg-white border-gray-300 border-t-0 rounded-b-lg py-4 px-5 flex flex-col gap-3 mb-6">
     {{/* Date and Time */}}
     <div class="flex gap-3 text-sm leading-relaxed">
       <span class="text-base shrink-0 w-6 text-center" aria-hidden="true">📅</span>
@@ -62,7 +62,7 @@
             {{ time.AsTime .start.dateTime | time.Format "Monday, January 2, 2006" }}
           </time>
           <br>
-          <span class="text-gray-500">
+          <span class="text-stone-500">
             {{ time.AsTime .start.dateTime | time.Format "3:04 PM" }}
             {{ with .end.dateTime }} &ndash; {{ time.AsTime . | time.Format "3:04 PM" }}{{ end }}
           </span>
@@ -101,14 +101,18 @@
       <div class="text-blue-700 underline" ><a href="{{ . }}" target="_blank" rel="noopener noreferrer">View on Google Calendar<span class="sr-only"> (opens in new tab)</span></a></div>
     </div>
     {{ end }}
+
+    <hr class="border-stone-300 my-4">
+
+    {{/* Description */}}
+    {{ with .description }}
+    <div class="text-sm leading-relaxed px-1 mb-2 [&_img]:hidden">
+      {{ . | safeHTML }}
+    </div>
+    {{ end }}
   </div>
 
-  {{/* Description */}}
-  {{ with .description }}
-  <div class="text-sm leading-relaxed px-1 mb-6 [&_img]:hidden">
-    {{ . | safeHTML }}
-  </div>
-  {{ end }}
+
 
   {{/* Images — only if they exist */}}
   {{ with .image_urls }}

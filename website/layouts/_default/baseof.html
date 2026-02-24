@@ -8,20 +8,42 @@
     {{ partial "css.html" . }}
   {{ end }}
 </head>
-<body class="m-0 font-sans bg-white text-gray-900 leading-relaxed">
+{{ $bg := resources.Get "/images/bg.webp" }}
+<body class="m-0 font-sans text-gray-900 leading-relaxed relative">
+  <div class="absolute inset-0 bg-repeat bg-center opacity-6 -z-10" style="background-image: url('{{ $bg.Permalink }}')"></div>
   <a class="absolute -top-full left-0 px-4 py-2 bg-white text-black z-50 no-underline font-bold focus:top-0" href="#main-content">Skip to main content</a>
-  <header role="banner" class="bg-white text-black text-center p-4">
-    {{ $image := resources.Get "/images/mpls.bike.png" }}
-    <a href="/" class="text-inherit no-underline">
-      <img src="{{ $image.Permalink }}" alt="Minneapolis Cycling Events" width="400px" class="mx-auto h-auto contrast-150">
+  <header role="banner" class=" text-black text-center py-16">
+    <a href="/" class="main-heading text-7xl mx-auto text-stone-800">
+      mpls.bike
     </a>
   </header>
+  <div class="absolute top-4 left-0 right-0 z-40 pointer-events-none">
+    <div class="max-w-[620px] mx-auto px-4 flex justify-between">
+      <a href="/" class="pointer-events-auto w-7 h-7 rounded-full bg-white/80 backdrop-blur border border-stone-300 flex items-center justify-center hover:bg-white transition-colors" aria-label="Home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-stone-800"><path d="M3 12L12 3l9 9"/><path d="M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9"/></svg>
+      </a>
+      <button id="share-btn" class="pointer-events-auto w-7 h-7  rounded-full bg-white/80 backdrop-blur border border-stone-300 flex items-center justify-center hover:bg-white transition-colors cursor-pointer" aria-label="Share">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-stone-800"><path d="M4 12v7a2 2 0 002 2h12a2 2 0 002-2v-7"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+      </button>
+    </div>
+  </div>
   <main id="main-content" role="main" class="max-w-[620px] mx-auto px-4">
     {{ block "main" . }}{{ end }}
   </main>
-  <footer role="contentinfo" class="text-center p-8 text-sm">
+  <script>
+    document.getElementById('share-btn').addEventListener('click', function() {
+      if (navigator.share) {
+        navigator.share({ title: document.title, url: window.location.href });
+      } else {
+        navigator.clipboard.writeText(window.location.href).then(function() {
+          alert('Link copied to clipboard!');
+        });
+      }
+    });
+  </script>
+  <footer role="contentinfo" class="text-center mt-8 p-4 text-sm">
     {{ $imageFooter := resources.Get "/images/bike3.png" }}
-    <img src="{{ $imageFooter.Permalink }}" alt="Footer of a bicycle" width="200px" class="mx-auto h-auto contrast-400">
+    <img src="{{ $imageFooter.Permalink }}" alt="Footer of a bicycle" width="300px" class="mx-auto h-auto contrast-200">
   </footer>
 </body>
 </html>

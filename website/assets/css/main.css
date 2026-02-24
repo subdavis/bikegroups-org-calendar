@@ -2,6 +2,18 @@
 @plugin "@tailwindcss/typography";
 @source "hugo_stats.json";
 
+@font-face {
+  font-family: 'Cabin Sketch';
+  src: url('/fonts/Cabin_Sketch/CabinSketch-Bold-subset.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 article.event-detail a {
   @apply text-blue-600 underline;
+}
+
+.main-heading {
+  font-family: 'Cabin Sketch', cursive;
 }
