@@ -1,63 +1,6 @@
 [
   {
     "kind": "calendar#event",
-    "etag": "\"3543469315936446\"",
-    "id": "0fb5pkf4h21kjt2e6b3n0hukt1",
-    "status": "confirmed",
-    "htmlLink": "https://www.google.com/calendar/event?eid=MGZiNXBrZjRoMjFranQyZTZiM24waHVrdDEgNmEyNTZlMjVlMzE2Y2M2Nzc3MWI5OWJkNDk5ZGZhNTdkMjc4MGQ1MWY2ZWI1ZjlkZjFhOWQ4NDI5OWExYjNjMkBn",
-    "created": "2026-02-18T22:34:22.000Z",
-    "updated": "2026-02-22T04:30:57.968Z",
-    "summary": "BE SEEN: A Reflective Clothing Remix Pop-Up (Sew In)",
-    "description": "Reflective clothing sewing pop-up event to help cyclists stay visible while riding in the dark.<br><br><b>Time</b>: 1-4pm on Tuesday, February 24th<br><br><b>Location</b>: Recovery Bike Shop<br><br><b>How it works</b>: Bring your clothing items you want to add more visibility to (shirts, hats, favorite jeans, jackets, bags, etc.). Sewing happens while you wait! Walk in with your boring pants, walk out with amazing reflective pants.<br><br><b>Cost</b>: $2-15 sliding scale depending on the piece (t-shirt sleeves are cheaper than sweatshirt sleeves, for example). Everything is pretty affordable.<br><br>Sewing and skill-sharing by: CJ Jensen (@mplsquiltzaddy)<br><br>Link: <a href=\"https://www.instagram.com/p/DUs48tLjqHJ/\" target=\"_blank\">https://www.instagram.com/p/DUs48tLjqHJ/</a>",
-    "location": "Recovery Bike Shop, 2504 Central Ave NE, Minneapolis, MN 55418, USA",
-    "creator": {
-      "email": "jmbangsund@gmail.com"
-    },
-    "organizer": {
-      "email": "6a256e25e316cc67771b99bd499dfa57d2780d51f6eb5f9df1a9d84299a1b3c2@group.calendar.google.com",
-      "displayName": "Minneapolis Cycling Events",
-      "self": true
-    },
-    "start": {
-      "dateTime": "2026-02-24T13:00:00-06:00",
-      "timeZone": "America/Chicago"
-    },
-    "end": {
-      "dateTime": "2026-02-24T16:00:00-06:00",
-      "timeZone": "America/Chicago"
-    },
-    "iCalUID": "0fb5pkf4h21kjt2e6b3n0hukt1@google.com",
-    "sequence": 0,
-    "reminders": {
-      "useDefault": true
-    },
-    "eventType": "default",
-    "extra_metadata": {
-      "id": 1,
-      "post_guid": "0ebaf05c9a915a4a",
-      "processed_at": "2026-02-22T03:12:19.473761+00:00",
-      "decision": "ignore",
-      "calendar_event_id": "0fb5pkf4h21kjt2e6b3n0hukt1",
-      "post_content": "<p>We\u2019re hosting a Sew In! Spring has sprung! (We\u2019re calling it.) But it\u2019s still dark on our ride home. So bring your favorite sewables to Recovery Bike Shop Tuesday Feb 24, 1-4 and get lit!\n\nBring us your shirts, your hats, your favorite jeans (if that\u2019s how you ride).\n\nThe famous CJ (who gave me a book the first time we met) will be mixing reflective fabrics, sewing prowess, and your favorite riding gear. You bring the gear, CJ will take care of everything else!\n\nSewed while you wait. Walk in with your boring pants. Walk out with amazing reflective pants.\n\nCost depends on your piece. T-shirt sleeves are cheaper than sweatshirt sleeves, for example. Everything is pretty dang affordable.\n\nRide safe!\n\n#IBikeNE\n\n#MeetMinneapolis\n#LifeByBike\n#BicycleCommuting\n#LocalBikeShop</p>\n\n\n\n\n<p><img src=\"https://rssglue.subdavis.com/media/0d/0d70c222f781baf9626a05780d7f069e383280cb92b2e10bf3ec7e7ed69e5c98.jpg\" /></p>\n\n\n<p><small>\u2764\ufe0f 47 likes | \ud83d\udcac 2 comments</small></p>\n\n<p><small>\ud83c\udfb5 Sway All Day - Trout Recording</small></p>",
-      "reasoning": "This post announces a \"BE SEEN: A Reflective Clothing Remix Pop-Up\" (Sew In) event on Tuesday, February 24th, 2026 from 1-4pm at Recovery Bike Shop. However, this event already exists in the calendar (ID: 0fb5pkf4h21kjt2e6b3n0hukt1) with all the relevant details including the date, time, location, cost ($2-15 sliding scale), and description. This is a duplicate announcement and should be ignored.",
-      "input_tokens": 14948,
-      "output_tokens": 1017,
-      "cost_usd": 0.060099,
-      "post_title": "We\u2019re hosting a Sew In! Spring has sprung! (We\u2019re calling it.) But it\u2019s still dark on our ride home.",
-      "post_author": "@recoverybikeshop",
-      "post_time": "2026-02-13T14:28:32+00:00",
-      "post_link": "https://www.instagram.com/p/DUs48tLjqHJ/",
-      "event_title": "BE SEEN: A Reflective Clothing Remix Pop-Up (Sew In)",
-      "event_date": "2026-02-24",
-      "event_time": "13:00",
-      "event_location": "Recovery Bike Shop"
-    },
-    "image_urls": [
-      "https://rssglue.subdavis.com/media/0d/0d70c222f781baf9626a05780d7f069e383280cb92b2e10bf3ec7e7ed69e5c98.jpg"
-    ]
-  },
-  {
-    "kind": "calendar#event",
     "etag": "\"3543893176769246\"",
     "id": "0m2065i38ihs5e7hrq8vsqalc2",
     "status": "confirmed",
@@ -439,49 +382,6 @@
   },
   {
     "kind": "calendar#event",
-    "etag": "\"3538919685799166\"",
-    "id": "4mdg5e479o3h22tpm8kk04cdi1_20260225T004500Z",
-    "status": "confirmed",
-    "htmlLink": "https://www.google.com/calendar/event?eid=NG1kZzVlNDc5bzNoMjJ0cG04a2swNGNkaTFfMjAyNjAyMjVUMDA0NTAwWiA2YTI1NmUyNWUzMTZjYzY3NzcxYjk5YmQ0OTlkZmE1N2QyNzgwZDUxZjZlYjVmOWRmMWE5ZDg0Mjk5YTFiM2MyQGc",
-    "created": "2025-11-13T22:33:07.000Z",
-    "updated": "2026-01-26T20:37:22.899Z",
-    "summary": "Bonesaw Cycling Collective Winter Tuesday rides",
-    "description": "<p dir=\"ltr\"><span>Group ride (no-drop)</span> <span><b>Bonesaw Cycling Collective Winter Tuesday rides. </b></span><a href=\"https://www.instagram.com/p/DQ-Owx8EcVH/\"><span><u>Instagram</u></span></a><span>. </span><a href=\"https://bonesawcycling.bike/events\"><span><u>Website</u></span></a><span>.</span></p><p dir=\"ltr\"><span><b>When: </b></span><span>Last Tuesday of each month. Meet at</span><span>\u00a06:45\u202fPM</span><span>. Meet at 6:45 pm, roll at 7 pm.\u00a0</span></p><p dir=\"ltr\"><span><b>Start and Finish</b></span><span>: </span><a href=\"https://www.google.com/maps/place/Martin+Olav+Sabo+Bridge/data=!4m2!3m1!19sChIJKc5CNksts1IRsDcmcJnTSog\"><span><u>Martin Olav Sabo Bridge</u></span></a></p><p dir=\"ltr\"><span><b>Distance</b></span><span>: typically 10-15 miles. </span><span><b>Pace</b></span><span>: typically 10-12 mph.\u00a0</span></p><p dir=\"ltr\"><span>Our winter ride series starts the last week of November and goes through March! Make sure to dress in layers and bring lights!</span></p>",
-    "location": "Martin Olav Sabo Bridge, Minneapolis, MN 55407, USA",
-    "creator": {
-      "email": "minneapoliscyclingcalendar@gmail.com"
-    },
-    "organizer": {
-      "email": "6a256e25e316cc67771b99bd499dfa57d2780d51f6eb5f9df1a9d84299a1b3c2@group.calendar.google.com",
-      "displayName": "Minneapolis Cycling Events",
-      "self": true
-    },
-    "start": {
-      "dateTime": "2026-02-24T18:45:00-06:00",
-      "timeZone": "America/Chicago"
-    },
-    "end": {
-      "dateTime": "2026-02-24T20:45:00-06:00",
-      "timeZone": "America/Chicago"
-    },
-    "recurringEventId": "4mdg5e479o3h22tpm8kk04cdi1",
-    "originalStartTime": {
-      "dateTime": "2026-02-24T18:45:00-06:00",
-      "timeZone": "America/Chicago"
-    },
-    "iCalUID": "4mdg5e479o3h22tpm8kk04cdi1@google.com",
-    "sequence": 0,
-    "reminders": {
-      "useDefault": true
-    },
-    "eventType": "default",
-    "recurrence_future_count": 2,
-    "recurrence_label": "And 1 more",
-    "extra_metadata": null,
-    "image_urls": []
-  },
-  {
-    "kind": "calendar#event",
     "etag": "\"3518332557865438\"",
     "id": "akq6he9k0demi7ao18fh45gddk_20260226T000000Z",
     "status": "confirmed",
@@ -560,8 +460,8 @@
       "useDefault": true
     },
     "eventType": "default",
-    "recurrence_future_count": 17,
-    "recurrence_label": "And 16 more",
+    "recurrence_future_count": 18,
+    "recurrence_label": "And 17 more",
     "extra_metadata": null,
     "image_urls": []
   },
@@ -733,8 +633,51 @@
       "useDefault": true
     },
     "eventType": "default",
-    "recurrence_future_count": 13,
-    "recurrence_label": "And 12 more",
+    "recurrence_future_count": 14,
+    "recurrence_label": "And 13 more",
+    "extra_metadata": null,
+    "image_urls": []
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3538919685799166\"",
+    "id": "4mdg5e479o3h22tpm8kk04cdi1_20260331T234500Z",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NG1kZzVlNDc5bzNoMjJ0cG04a2swNGNkaTFfMjAyNjAzMzFUMjM0NTAwWiA2YTI1NmUyNWUzMTZjYzY3NzcxYjk5YmQ0OTlkZmE1N2QyNzgwZDUxZjZlYjVmOWRmMWE5ZDg0Mjk5YTFiM2MyQGc",
+    "created": "2025-11-13T22:33:07.000Z",
+    "updated": "2026-01-26T20:37:22.899Z",
+    "summary": "Bonesaw Cycling Collective Winter Tuesday rides",
+    "description": "<p dir=\"ltr\"><span>Group ride (no-drop)</span> <span><b>Bonesaw Cycling Collective Winter Tuesday rides. </b></span><a href=\"https://www.instagram.com/p/DQ-Owx8EcVH/\"><span><u>Instagram</u></span></a><span>. </span><a href=\"https://bonesawcycling.bike/events\"><span><u>Website</u></span></a><span>.</span></p><p dir=\"ltr\"><span><b>When: </b></span><span>Last Tuesday of each month. Meet at</span><span>\u00a06:45\u202fPM</span><span>. Meet at 6:45 pm, roll at 7 pm.\u00a0</span></p><p dir=\"ltr\"><span><b>Start and Finish</b></span><span>: </span><a href=\"https://www.google.com/maps/place/Martin+Olav+Sabo+Bridge/data=!4m2!3m1!19sChIJKc5CNksts1IRsDcmcJnTSog\"><span><u>Martin Olav Sabo Bridge</u></span></a></p><p dir=\"ltr\"><span><b>Distance</b></span><span>: typically 10-15 miles. </span><span><b>Pace</b></span><span>: typically 10-12 mph.\u00a0</span></p><p dir=\"ltr\"><span>Our winter ride series starts the last week of November and goes through March! Make sure to dress in layers and bring lights!</span></p>",
+    "location": "Martin Olav Sabo Bridge, Minneapolis, MN 55407, USA",
+    "creator": {
+      "email": "minneapoliscyclingcalendar@gmail.com"
+    },
+    "organizer": {
+      "email": "6a256e25e316cc67771b99bd499dfa57d2780d51f6eb5f9df1a9d84299a1b3c2@group.calendar.google.com",
+      "displayName": "Minneapolis Cycling Events",
+      "self": true
+    },
+    "start": {
+      "dateTime": "2026-03-31T18:45:00-05:00",
+      "timeZone": "America/Chicago"
+    },
+    "end": {
+      "dateTime": "2026-03-31T20:45:00-05:00",
+      "timeZone": "America/Chicago"
+    },
+    "recurringEventId": "4mdg5e479o3h22tpm8kk04cdi1",
+    "originalStartTime": {
+      "dateTime": "2026-03-31T18:45:00-05:00",
+      "timeZone": "America/Chicago"
+    },
+    "iCalUID": "4mdg5e479o3h22tpm8kk04cdi1@google.com",
+    "sequence": 0,
+    "reminders": {
+      "useDefault": true
+    },
+    "eventType": "default",
+    "recurrence_future_count": 1,
+    "recurrence_label": "No more after this",
     "extra_metadata": null,
     "image_urls": []
   },
