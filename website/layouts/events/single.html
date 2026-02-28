@@ -66,6 +66,14 @@
     </div>
     {{ end }}
 
+      {{/* Google Calendar link */}}
+    {{ with .Params.extra_metadata.post_link }}
+    <div class="flex gap-3 text-sm leading-relaxed">
+      <span class="text-base shrink-0 w-6 text-center" aria-hidden="true">🌅</span>
+      <div class="text-blue-700 underline"><a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }}</a></div>
+    </div>
+    {{ end }}
+
     <hr class="border-stone-300 my-4">
 
     {{/* Description */}}

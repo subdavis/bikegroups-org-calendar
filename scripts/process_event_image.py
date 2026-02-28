@@ -47,8 +47,10 @@ def parse_event_id(body: str) -> str:
 
 
 def parse_image_urls(body: str) -> list[str]:
-    pattern = r"!\[.*?\]\((https://(?:github\.com/user-attachments/assets/|user-images\.githubusercontent\.com/)\S+)\)"
-    return re.findall(pattern, body)
+    gh_image = r"https://(?:github\.com/user-attachments/assets/|user-images\.githubusercontent\.com/)\S+"
+    markdown = re.findall(rf"!\[.*?\]\(({gh_image})\)", body)
+    html = re.findall(rf'<img\s[^>]*src="({gh_image})"[^>]*/>', body)
+    return markdown + html
 
 
 def find_next_index(event_id: str) -> int:
