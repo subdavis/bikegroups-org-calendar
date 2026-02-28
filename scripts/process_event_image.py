@@ -14,7 +14,7 @@ ISSUE_BODY = os.environ.get("ISSUE_BODY", "")
 ISSUE_AUTHOR = os.environ.get("ISSUE_AUTHOR", "")
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
-STATIC_DIR = Path("website/static/event-images")
+ASSET_DIR = Path("website/assets/event-images")
 
 CONTENT_TYPE_TO_EXT = {
     "image/jpeg": "jpg",
@@ -30,7 +30,10 @@ CONTENT_TYPE_TO_EXT = {
 def parse_event_id(body: str) -> str:
     match = re.search(r"### Event ID\s*\n\n([^\n]+)", body)
     if not match:
-        print("ERROR: Could not find '### Event ID' section in issue body.", file=sys.stderr)
+        print(
+            "ERROR: Could not find '### Event ID' section in issue body.",
+            file=sys.stderr,
+        )
         sys.exit(1)
     event_id = match.group(1).strip()
     if not re.fullmatch(r"[a-zA-Z0-9_-]+", event_id):
@@ -49,7 +52,7 @@ def parse_image_urls(body: str) -> list[str]:
 
 
 def find_next_index(event_id: str) -> int:
-    existing = list(STATIC_DIR.glob(f"{event_id}.*"))
+    existing = list(ASSET_DIR.glob(f"{event_id}.*"))
     if not existing:
         return 1
     indices = []
@@ -96,7 +99,7 @@ def main():
         )
         sys.exit(1)
 
-    STATIC_DIR.mkdir(parents=True, exist_ok=True)
+    ASSET_DIR.mkdir(parents=True, exist_ok=True)
 
     next_index = find_next_index(event_id)
     created_files = []
@@ -104,7 +107,7 @@ def main():
     for i, url in enumerate(image_urls):
         index = next_index + i
         # Placeholder path without extension; download_image will add the right extension
-        dest_stem = STATIC_DIR / f"{event_id}.{index}"
+        dest_stem = ASSET_DIR / f"{event_id}.{index}"
         try:
             final_path = download_image(url, dest_stem)
             created_files.append(str(final_path))

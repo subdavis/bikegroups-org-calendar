@@ -8,6 +8,7 @@ import json
 
 from . import calendar, claude, db, rss
 
+
 # Matches any tag-like substring — used for HTML detection only
 _HTML_TAG_RE = re.compile(r"<[a-zA-Z/][^>]*>")
 

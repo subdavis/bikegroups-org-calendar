@@ -60,11 +60,12 @@ jobs:
         if: steps.process.outputs.script_failed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ERROR_MSG: ${{ steps.process.outputs.error_msg }}
         run: |
           gh issue comment ${{ github.event.issue.number }} \
             --body "**Failed to process event images.**
 
-          ${{ steps.process.outputs.error_msg }}
+          ${ERROR_MSG}
 
           Please correct the issue and open a new one."
           gh issue close ${{ github.event.issue.number }}
@@ -81,7 +82,7 @@ jobs:
 
           branch="event-image/issue-${ISSUE_NUMBER}"
           git checkout -b "$branch"
-          git add website/static/event-images/
+          git add website/assets/event-images/
           git commit -m "Add event images for ${EVENT_ID} (fixes #${ISSUE_NUMBER})"
           git push --force origin "$branch"
 

@@ -32,12 +32,16 @@ article.event-detail a {
   @apply bg-stone-600;
 }
 
+.calendar-description a {
+  @apply text-blue-600 underline;
+}
+.calendar-description p {
+  @apply pb-2;
+}
+
 /* Custom metadata styles for event cards on the events/ page by source */
 
 /* Behind Bars Bicycle Shop */
-article.ig-behindbarsbicycleshop .schedule-card {
-  @apply bg-[#fef1ff];
-}
 article.ig-behindbarsbicycleshop .schedule-card__accent-border {
   @apply bg-linear-to-t from-[#6dade4] to-[#e220ec];
 }
