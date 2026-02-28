@@ -637,6 +637,7 @@ def handle_submit_decision(input_data: dict, ctx: AnalysisContext) -> dict:
             post_time=ctx.post.published.isoformat() if ctx.post.published else None,
             post_link=ctx.post.link,
             event=decision.event,
+            post_extra=ctx.post.extra or None,
         )
 
         ctx.decisions.append(decision)

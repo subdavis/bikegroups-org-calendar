@@ -64,6 +64,12 @@ def fetch_feed(url: str) -> list[RssPost]:
         elif hasattr(entry, "author_detail"):
             author = entry.author_detail.get("name")
 
+        # Collect custom namespaced metadata (e.g. rssglue:score → rssglue_score)
+        extra: dict = {}
+        for key, value in entry.items():
+            if key.startswith("rssglue_"):
+                extra[key] = value
+
         post = RssPost(
             guid=entry.get("id", entry.get("link", "")),
             title=entry.get("title", ""),
@@ -72,6 +78,7 @@ def fetch_feed(url: str) -> list[RssPost]:
             author=author,
             published=published,
             image_urls=image_urls,
+            extra=extra,
         )
         posts.append(post)
 

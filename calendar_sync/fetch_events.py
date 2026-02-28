@@ -4,6 +4,8 @@ import re
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
+import json
+
 from . import calendar, claude, db, rss
 
 # Matches any tag-like substring — used for HTML detection only
@@ -189,6 +191,12 @@ def _attach_metadata(events: list[dict]) -> None:
                 base_id = _base_event_id(event_id)
                 if base_id is not None:
                     row = db_rows.get(base_id)
+        if row and row.get("post_extra"):
+            try:
+                row["post_extra"] = json.loads(row["post_extra"])
+                event["source_id"] = row["post_extra"].get("rssglue_source_feed_id")
+            except (json.JSONDecodeError, TypeError):
+                pass
         event["extra_metadata"] = row
         event["image_urls"] = (
             rss.extract_image_urls(row["post_content"] or "")

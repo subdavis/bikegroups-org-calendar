@@ -113,6 +113,7 @@ def process(
                     post_author=post.author,
                     post_time=post.published.isoformat() if post.published else None,
                     post_link=post.link,
+                    post_extra=post.extra or None,
                 )
             total_cost += pf.cost_usd
             continue

@@ -1,5 +1,6 @@
 """SQLite database for tracking processed posts."""
 
+import json
 import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
@@ -40,9 +41,16 @@ def init_db() -> None:
             event_title TEXT,
             event_date TEXT,
             event_time TEXT,
-            event_location TEXT
+            event_location TEXT,
+            post_extra TEXT
         )
     """)
+
+    # Migration: add post_extra column if missing (for existing databases)
+    cursor.execute("PRAGMA table_info(processed_posts)")
+    columns = {row[1] for row in cursor.fetchall()}
+    if "post_extra" not in columns:
+        cursor.execute("ALTER TABLE processed_posts ADD COLUMN post_extra TEXT")
 
     conn.commit()
     conn.close()
@@ -93,6 +101,7 @@ def record_processed(
     post_time: Optional[str] = None,
     post_link: Optional[str] = None,
     event: Optional[EventDetails] = None,
+    post_extra: Optional[dict] = None,
 ) -> None:
     """Record that a post has been processed."""
     conn = sqlite3.connect(get_db_path())
@@ -103,8 +112,9 @@ def record_processed(
         INSERT INTO processed_posts
         (post_guid, processed_at, decision, calendar_event_id, post_content, reasoning,
          input_tokens, output_tokens, cost_usd, post_title, post_author,
-         post_time, post_link, event_title, event_date, event_time, event_location)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+         post_time, post_link, event_title, event_date, event_time, event_location,
+         post_extra)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             post_guid,
@@ -124,6 +134,7 @@ def record_processed(
             event.date if event else None,
             event.time if event else None,
             event.location if event else None,
+            json.dumps(post_extra) if post_extra else None,
         ),
     )
 

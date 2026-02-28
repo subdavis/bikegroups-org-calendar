@@ -67,6 +67,7 @@ class RssPost(BaseModel):
     author: Optional[str] = None
     published: Optional[datetime] = None
     image_urls: list[str] = []
+    extra: dict = {}
 
 
 class CalendarEvent(BaseModel):

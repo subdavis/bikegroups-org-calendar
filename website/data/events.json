@@ -32,6 +32,7 @@
       "useDefault": true
     },
     "eventType": "default",
+    "source_id": "ig-behindbarsbicycleshop",
     "extra_metadata": {
       "id": 10,
       "post_guid": "66a02faebd16c4c2",
@@ -50,7 +51,12 @@
       "event_title": "Behind Bars Fixed gear ride",
       "event_date": "2026-02-27",
       "event_time": "17:30",
-      "event_location": "Behind Bars Bicycle Shop"
+      "event_location": "Behind Bars Bicycle Shop",
+      "post_extra": {
+        "rssglue_score": "58",
+        "rssglue_source_feed_id": "ig-behindbarsbicycleshop",
+        "rssglue_source_feed_type": "instagram"
+      }
     },
     "image_urls": [
       "https://rssglue.subdavis.com/media/84/8457ca7ecd562246d2f9571f0d094b4d902b271e94ff5b4d3fdf22659bbf76ae.webp"
@@ -89,8 +95,35 @@
       "useDefault": true
     },
     "eventType": "default",
-    "extra_metadata": null,
-    "image_urls": []
+    "source_id": "ig-team_recess",
+    "extra_metadata": {
+      "id": 41,
+      "post_guid": "cbe9424577a5a8d1",
+      "processed_at": "2026-02-26T03:11:07.237883+00:00",
+      "decision": "create",
+      "calendar_event_id": "q769hs0bjvh8sq1ho00fce3qms",
+      "post_content": "<p>Community support is more important than ever. Please join us in supporting our longtime sponsor, Yess Yoga, by joining us for a Vinyasa yoga class on Tuesday, March 3rd  from 6-7pm. Yess Yoga has the most amazing studio, instructors, and vibe and we can\u2019t wait to introduce you if you\u2019ve never been! Yess Yoga will have yoga mats available for use.\n\nA note on the yoga class: You\u2019ll need to register for the class through Yess Yoga before the ride. Registration happens on their website. Yess\u2019 drop-in rate is $20/class, and they also offer new student rates and multi-class packages. Contact Yess for more information.\n\nAbout Vinyasa- Vinyasa is defined as \u201cto move in a special way\u201d, we try to take that definition to heart each time and bring a group of students together by moving through unique sequences. A vinyasa class can be big flowing movement on each breath or slower movements to explore depth. No class is ever the same as the students in the room are never the same. Our main focus for each class are safe alignment and encouraging each student to explore their personal yoga practice.</p>\n\n\n\n\n<p><img src=\"https://rssglue.subdavis.com/media/2d/2d7cfbe54c2cc2fe2a96d6ef9b47b9e09e832c516fd468aba6d76cd3b7ade163.jpg\" /></p>\n\n\n<p><small>\u2764\ufe0f 8 likes | \ud83d\udcac 0 comments</small></p>",
+      "reasoning": "This post announces a Vinyasa yoga class on Tuesday, March 3rd from 6-7pm at Yess Yoga. The event is organized by Team Recess to support their sponsor Yess Yoga. All key details are provided in both the text and the image (event poster). No duplicates found in the calendar.",
+      "input_tokens": 15212,
+      "output_tokens": 957,
+      "cost_usd": 0.059991,
+      "post_title": "Community support is more important than ever. Please join us in supporting our longtime sponsor, Ye",
+      "post_author": "@team_recess",
+      "post_time": "2026-02-25T17:52:10+00:00",
+      "post_link": "https://www.instagram.com/p/DVMJ5fLjImu/",
+      "event_title": "Team Recess Vinyasa Yoga Class at Yess Yoga",
+      "event_date": "2026-03-03",
+      "event_time": "18:00",
+      "event_location": "Yess Yoga",
+      "post_extra": {
+        "rssglue_score": "10",
+        "rssglue_source_feed_id": "ig-team_recess",
+        "rssglue_source_feed_type": "instagram"
+      }
+    },
+    "image_urls": [
+      "https://rssglue.subdavis.com/media/2d/2d7cfbe54c2cc2fe2a96d6ef9b47b9e09e832c516fd468aba6d76cd3b7ade163.jpg"
+    ]
   },
   {
     "kind": "calendar#event",
@@ -125,6 +158,7 @@
       "useDefault": true
     },
     "eventType": "default",
+    "source_id": "ig-behindbarsbicycleshop",
     "extra_metadata": {
       "id": 27,
       "post_guid": "e57de478abfbf07e",
@@ -143,7 +177,12 @@
       "event_title": "Behind Bars Foodie Ride: Pho H\u00f2a",
       "event_date": "2026-03-05",
       "event_time": "18:00",
-      "event_location": "Behind Bars Bicycle Shop, 208 13th Ave NE"
+      "event_location": "Behind Bars Bicycle Shop, 208 13th Ave NE",
+      "post_extra": {
+        "rssglue_score": "109",
+        "rssglue_source_feed_id": "ig-behindbarsbicycleshop",
+        "rssglue_source_feed_type": "instagram"
+      }
     },
     "image_urls": [
       "https://rssglue.subdavis.com/media/5c/5c1ed3a3d7019eb6509e16c5105c56cbbd34516b95f06a9d2e21df6bf328cdc7.jpg",
@@ -183,6 +222,7 @@
       "useDefault": true
     },
     "eventType": "default",
+    "source_id": "ig-behindbarsbicycleshop",
     "extra_metadata": {
       "id": 36,
       "post_guid": "3a6508eee95d39c2",
@@ -201,7 +241,12 @@
       "event_title": "Seed Swap Garden Ride",
       "event_date": "2026-03-08",
       "event_time": "12:00",
-      "event_location": "Behind Bars Bicycle Shop"
+      "event_location": "Behind Bars Bicycle Shop",
+      "post_extra": {
+        "rssglue_score": "69",
+        "rssglue_source_feed_id": "ig-behindbarsbicycleshop",
+        "rssglue_source_feed_type": "instagram"
+      }
     },
     "image_urls": [
       "https://rssglue.subdavis.com/media/fa/fa6709937d6eb669fc55ac192a6b4340c3bb45f4a730a1cec9550dca73b9ba0e.jpg"
@@ -240,6 +285,7 @@
       "useDefault": true
     },
     "eventType": "default",
+    "source_id": "ig-behindbarsbicycleshop",
     "extra_metadata": {
       "id": 28,
       "post_guid": "e57de478abfbf07e",
@@ -258,7 +304,12 @@
       "event_title": "Behind Bars Foodie Ride: Emily's Lebanese Deli",
       "event_date": "2026-03-12",
       "event_time": "18:00",
-      "event_location": "Behind Bars Bicycle Shop, 208 13th Ave NE"
+      "event_location": "Behind Bars Bicycle Shop, 208 13th Ave NE",
+      "post_extra": {
+        "rssglue_score": "109",
+        "rssglue_source_feed_id": "ig-behindbarsbicycleshop",
+        "rssglue_source_feed_type": "instagram"
+      }
     },
     "image_urls": [
       "https://rssglue.subdavis.com/media/5c/5c1ed3a3d7019eb6509e16c5105c56cbbd34516b95f06a9d2e21df6bf328cdc7.jpg",
@@ -298,6 +349,7 @@
       "useDefault": true
     },
     "eventType": "default",
+    "source_id": "ig-behindbarsbicycleshop",
     "extra_metadata": {
       "id": 29,
       "post_guid": "e57de478abfbf07e",
@@ -316,7 +368,12 @@
       "event_title": "Behind Bars Foodie Ride: Lowry & Central (TBD)",
       "event_date": "2026-03-19",
       "event_time": "18:00",
-      "event_location": "Behind Bars Bicycle Shop, 208 13th Ave NE"
+      "event_location": "Behind Bars Bicycle Shop, 208 13th Ave NE",
+      "post_extra": {
+        "rssglue_score": "109",
+        "rssglue_source_feed_id": "ig-behindbarsbicycleshop",
+        "rssglue_source_feed_type": "instagram"
+      }
     },
     "image_urls": [
       "https://rssglue.subdavis.com/media/5c/5c1ed3a3d7019eb6509e16c5105c56cbbd34516b95f06a9d2e21df6bf328cdc7.jpg",
@@ -332,6 +389,7 @@
     "created": "2025-04-10T20:39:24.000Z",
     "updated": "2026-02-22T03:19:02.552Z",
     "summary": "Coffee (Outside) by Recovery Bike Shop",
+    "source_id": "ig-recoverybikeshop",
     "description": "<p dir=\"ltr\"><span>Coffee (Outside) by Recovery Bike Shop. </span><a href=\"http://recovery.bike/events\"><span><u>Website</u></span></a><span>. </span><a href=\"https://www.instagram.com/recoverybikeshop/\"><span><u>Instagram</u></span></a><span>.</span></p><p dir=\"ltr\"><span>Every Sunday at 10am.</span></p><p dir=\"ltr\"><span>Start: Check @RecoveryBikeShop on Instagram for NE location reveal the day before</span></p><p dir=\"ltr\"><span>This is a bike-themed meetup every Sunday at 10am. Not a ride. It\u2019s just coffee and hanging out. New location in NE Mpls every week. We bring treats. BYO coffee.</span></p>",
     "creator": {
       "email": "jmbangsund@gmail.com"
@@ -621,6 +679,7 @@
     "eventType": "default",
     "recurrence_future_count": 1,
     "recurrence_label": "No more after this",
+    "source_id": "ig-bonesawcyclingcollective",
     "extra_metadata": {
       "id": 46,
       "post_guid": "82ecf2da162f64c6",
@@ -639,7 +698,12 @@
       "event_title": "Bonesaw Cycling Collective Winter Tuesday rides",
       "event_date": "2026-03-31",
       "event_time": "18:45",
-      "event_location": "Martin Olav Sabo Bridge, Minneapolis, MN 55407, USA"
+      "event_location": "Martin Olav Sabo Bridge, Minneapolis, MN 55407, USA",
+      "post_extra": {
+        "rssglue_score": "46",
+        "rssglue_source_feed_id": "ig-bonesawcyclingcollective",
+        "rssglue_source_feed_type": "instagram"
+      }
     },
     "image_urls": [
       "https://rssglue.subdavis.com/media/b4/b446ee7f09d51f6f7e3e33cfe7c49c5cb7ad130ea3e13031dded9e614c7f69b1.jpg",
@@ -677,6 +741,7 @@
       "useDefault": false
     },
     "eventType": "default",
+    "source_id": "ig-midwestdirtlegion",
     "extra_metadata": {
       "id": 23,
       "post_guid": "ff0a249b117a7cb6",
@@ -695,7 +760,12 @@
       "event_title": "Dirt Church 2026",
       "event_date": "2026-08-07",
       "event_time": null,
-      "event_location": "Cuyuna"
+      "event_location": "Cuyuna",
+      "post_extra": {
+        "rssglue_score": "42",
+        "rssglue_source_feed_id": "ig-midwestdirtlegion",
+        "rssglue_source_feed_type": "instagram"
+      }
     },
     "image_urls": [
       "https://rssglue.subdavis.com/media/c0/c00995e15470595f6988b57a23080bf7bfe7b7201a2346810596508ee6999bf6.jpg"
