@@ -1,0 +1,97 @@
+name: Process Event Image
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  process:
+    if: contains(github.event.issue.labels.*.name, 'event-image')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: uv sync --all-groups
+
+      - name: Run image processing script
+        id: process
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          REPO: ${{ github.repository }}
+        run: |
+          set +e
+          output=$(uv run scripts/process_event_image.py 2>error.txt)
+          exit_code=$?
+          set -e
+          if [ $exit_code -ne 0 ]; then
+            error_msg=$(cat error.txt)
+            echo "script_failed=true" >> "$GITHUB_OUTPUT"
+            echo "error_msg<<EOF" >> "$GITHUB_OUTPUT"
+            echo "$error_msg" >> "$GITHUB_OUTPUT"
+            echo "EOF" >> "$GITHUB_OUTPUT"
+          else
+            echo "script_failed=false" >> "$GITHUB_OUTPUT"
+            echo "files_created<<EOF" >> "$GITHUB_OUTPUT"
+            echo "$output" >> "$GITHUB_OUTPUT"
+            echo "EOF" >> "$GITHUB_OUTPUT"
+            # Extract event_id from the first filename
+            first_file=$(echo "$output" | head -1)
+            basename=$(basename "$first_file")
+            event_id=$(echo "$basename" | cut -d'.' -f1)
+            echo "event_id=$event_id" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Comment on failure
+        if: steps.process.outputs.script_failed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} \
+            --body "**Failed to process event images.**
+
+          ${{ steps.process.outputs.error_msg }}
+
+          Please correct the issue and open a new one."
+          gh issue close ${{ github.event.issue.number }}
+
+      - name: Create branch and PR
+        if: steps.process.outputs.script_failed == 'false' && steps.process.outputs.files_created != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EVENT_ID: ${{ steps.process.outputs.event_id }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          branch="event-image/issue-${ISSUE_NUMBER}"
+          git checkout -b "$branch"
+          git add website/static/event-images/
+          git commit -m "Add event images for ${EVENT_ID} (fixes #${ISSUE_NUMBER})"
+          git push origin "$branch"
+
+          pr_url=$(gh pr create \
+            --title "Add images for event ${EVENT_ID}" \
+            --body "Adds uploaded images for event \`${EVENT_ID}\`.
+
+          Closes #${ISSUE_NUMBER}" \
+            --head "$branch" \
+            --base main)
+
+          gh issue comment "${ISSUE_NUMBER}" \
+            --body "Images downloaded and PR created: ${pr_url}"

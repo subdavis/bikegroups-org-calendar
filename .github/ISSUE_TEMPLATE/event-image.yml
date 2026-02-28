@@ -1,0 +1,30 @@
+name: Event Image Upload
+description: Upload a custom image for a calendar event
+labels: ["event-image"]
+
+body:
+  - type: input
+    id: event_id
+    attributes:
+      label: Event ID
+      description: The ID of the event to attach images to
+      placeholder: "e.g. q769hs0bjvh8sq1ho00fce3qms"
+    validations:
+      required: true
+
+  - type: textarea
+    id: images
+    attributes:
+      label: Images
+      description: Drag and drop or paste images here. GitHub will upload them and insert markdown links automatically.
+      placeholder: "Drag and drop image files here, or paste them from your clipboard."
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any additional notes about these images (optional)
+    validations:
+      required: false
